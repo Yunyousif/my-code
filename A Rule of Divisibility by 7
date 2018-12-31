@@ -1,0 +1,31 @@
+echo "# yysf" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git remote add origin https://github.com/Yunyousif/yysf.git
+git push -u origin master
+
+//
+def seven(m):
+    # your code
+    """ 
+    判断否被7整除   输出算法的次数和最终的等效数字
+    """
+#   num = m 
+    count = 0
+    result = m
+#   len_num = len(str(num))
+    while True :
+        len_result = len(str(result))
+        if len_result == 1 or len_result == 2 :
+            break     
+        result = result//10 - (result%10) * 2
+        count += 1
+
+
+    list1 = (result,count)
+    return list1
+    
+    ####
+     A Rule of Divisibility by 7  测试通过程序
+    ####
